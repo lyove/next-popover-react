@@ -62,7 +62,7 @@ export default defineConfig(({ command, mode }) => {
       base: "./",
       build: {
         lib: {
-          entry: path.resolve(__dirname, "src/component/index.tsx"),
+          entry: path.resolve(__dirname, "src/popover/index.tsx"),
           name: getPackageNameCamelCase(),
           formats: ["es", "iife", "umd"],
           fileName: (format) => fileNames[format],

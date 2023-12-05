@@ -11,7 +11,7 @@ const config = {
   },
   entries: [
     {
-      filePath: "./src/component/index.tsx",
+      filePath: "./src/popover/index.tsx",
       outFile: `./dist/${getPackageName()}.es.d.ts`,
       output: {
         noBanner: true,
