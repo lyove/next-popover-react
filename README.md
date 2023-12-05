@@ -24,6 +24,12 @@ pnpm add next-popover-react
 import Popover, { PlacementType, EmitType } from 'next-popover-react';
 
 export default () => (
-  <Popover content="next-popver-react"><button>Trigger</button></Popover>
+  <Popover 
+    content="next-popver-react"
+    placement="top-start"
+    emit="hover"
+  >
+    <button>Trigger</button>
+  </Popover>
 );
 ```
