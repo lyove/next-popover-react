@@ -34,7 +34,7 @@ function App() {
           </a>
           <a
             className="btn pri"
-            href="https://lyove.github.io/next-popover-react/"
+            href="https://lyove.github.io/next_popover_react/"
             target="_blank"
             rel="noreferrer"
           >
