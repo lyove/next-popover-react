@@ -1,12 +1,8 @@
 # Next-Popover-React
 
-![Header Image](public/Popover.png)
-
 React wrapper for next-popover library
 
 [![Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/next-popover-vywrrk)
-
-[中文文档](./README_zh.md)
 
 ## Install
 
