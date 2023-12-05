@@ -1,0 +1,106 @@
+{
+    "name": "next-popover-react",
+    "version": "0.0.1",
+    "description": "⚛️ React wrapper for next-popover library",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/lyove/next-popover-react"
+    },
+    "homepage": "https://github.com/lyove/next-popover-react#readme",
+    "author": "lyove",
+    "files": [
+      "dist"
+    ],
+    "main": "./dist/popover.es.js",
+    "exports": {
+      ".": {
+        "import": "./dist/popover.es.js",
+        "require": "./dist/popover.umd.js"
+      }
+    },
+    "publishConfig": {
+      "access": "public",
+      "registry": "https://registry.npmjs.org/"
+    },
+    "keywords": [
+      "popover",
+      "react-popover",
+      "popover.js",
+      "popup",
+      "react-popup",
+      "popup.js",
+      "next-popover",
+      "next-popover-react",
+      "dropdown",
+      "dialog",
+      "overlay",
+      "tooltip",
+      "react-dropdown",
+      "react-dialog",
+      "react-overlay",
+      "react-tooltip"
+    ],
+    "license": "MIT",
+    "scripts": {
+      "dev": "vite --open --mode development",
+      "build": "tsc && vite build --mode lib && dts-bundle-generator --config ./dts-bundle-generator.config.ts",
+      "build:site": "tsc && vite build --mode production",
+      "serve": "vite preview",
+      "eslint": "eslint . --ext .js,.cjs,.ts,.jsx,.tsx, --quiet --fix --ignore-path ./.gitignore",
+      "prettier": "prettier . --loglevel warn --write './**/*.{js,jsx,ts,tsx,css,html,json}'",
+      "stylelint": "stylelint ./**/*.{css,less,scss,sass} --fix",
+      "prepare": "git init && husky install",
+      "type-check": "tsc"
+    },
+    "dependencies": {
+      "next-popover": "^0.0.21",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+    },
+    "peerDependencies": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+      "@types/node": "^18.16.0",
+      "@types/react": "^17.0.38",
+      "@types/react-dom": "^17.0.11",
+      "@typescript-eslint/eslint-plugin": "^5.10.2",
+      "@typescript-eslint/parser": "^5.10.2",
+      "@vitejs/plugin-react": "^3.1.0",
+      "classnames": "^2.3.2",
+      "dts-bundle-generator": "^7.1.0",
+      "eslint": "^8.8.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-import": "^2.25.4",
+      "eslint-plugin-jsx-a11y": "^6.5.1",
+      "eslint-plugin-prettier": "^4.0.0",
+      "eslint-plugin-react": "^7.28.0",
+      "eslint-plugin-simple-import-sort": "^7.0.0",
+      "husky": "^8.0.3",
+      "less": "^4.1.3",
+      "lint-staged": "^13.1.0",
+      "pre-commit": "^1.2.2",
+      "prettier": "^2.5.1",
+      "stylelint": "^14.16.1",
+      "stylelint-config-recommended": "^9.0.0",
+      "stylelint-config-sass-guidelines": "^9.0.1",
+      "typescript": "^4.9.4",
+      "vite": "^4.5.0",
+      "vite-plugin-banner": "^0.7.0",
+      "vite-plugin-dts": "^2.3.0",
+      "vite-tsconfig-paths": "^4.2.0"
+    },
+    "lint-staged": {
+      "./**/*.{js,cjs,ts,jsx,tsx}": [
+        "eslint --fix --ignore-path ./.gitignore"
+      ],
+      "./**/*.{css,less,scss,sass}": [
+        "stylelint --fix"
+      ],
+      "./**/*.{js,cjs,ts,css,scss,sass,html,json,md}": [
+        "prettier . --loglevel warn --write "
+      ]
+    }
+  }
+  

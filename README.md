@@ -1,8 +1,33 @@
-# next-popover-react
+# Next-Popover-React
 
-<a href="https://github.com/lyove/next-popover-react/stargazers"><img src="https://img.shields.io/github/stars/lyove/next-popover-react" alt="Stars Badge"/></a>
-<a href="https://github.com/lyove/next-popover-react/network/members"><img src="https://img.shields.io/github/forks/lyove/next-popover-react" alt="Forks Badge"/></a>
-<a href="https://github.com/lyove/next-popover-react/pulls"><img src="https://img.shields.io/github/issues-pr/lyove/next-popover-react" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/lyove/next-popover-react/issues"><img src="https://img.shields.io/github/issues/lyove/next-popover-react" alt="Issues Badge"/></a>
-<a href="https://github.com/lyove/next-popover-react/graphs/contributors"><img src="https://img.shields.io/github/contributors/lyove/next-popover-react?color=2b9348" alt="GitHub contributors"></a>
-<a href="https://github.com/lyove/next-popover-react/blob/master/LICENSE"><img src="https://img.shields.io/github/license/lyove/next-popover-react?color=2b9348" alt="License Badge"/></a>
+![Header Image](public/Popover.png)
+
+React wrapper for next-popover library
+
+[![Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/next-popover-vywrrk)
+
+[中文文档](./README_zh.md)
+
+## Install
+
+```
+npm i next-popover-react
+```
+or
+```
+yarn add next-popover-react
+```
+or
+```
+pnpm add next-popover-react
+```
+
+## Usage
+
+```jsx
+import Popover, { PlacementType, EmitType } from 'next-popover-react';
+
+export default () => (
+  <Popover content="next-popver-react"><button>Trigger</button></Popover>
+);
+```
