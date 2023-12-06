@@ -19,14 +19,15 @@ function Popver(props: PopoverProps) {
 
   useEffect(() => {
     const { content, ...restProps } = props;
+    let popover = null;
     if (popRef.current) {
-      const popover = new NextPopover({
+      popover = new NextPopover({
         ...restProps,
         trigger: popRef.current,
         content,
       });
-      setPopInst(popover);
     }
+    setPopInst(popover);
   }, []);
 
   return triggerNode;
