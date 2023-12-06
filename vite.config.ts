@@ -8,7 +8,8 @@ import styleInject from "./plugins/style-inject";
 import packageJson from "./package.json";
 
 const getPackageName = () => {
-  return packageJson.name;
+  // return packageJson.name;
+  return "popover";
 };
 
 const getPackageNameCamelCase = () => {
