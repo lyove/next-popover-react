@@ -37,27 +37,6 @@ const pkgInfo = `/**
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {
-  /*
-  // when command line: vite
-  if (command === "serve") {
-    // do something
-  }
-  // when command line: vite build
-  else if (command === "build") {
-    // do something
-    // fs.rmdirSync("./dist", { recursive: true });
-  }
-
-  // such as command line: vite --mode development
-  if (mode === "development") {
-    // do something
-  }
-  // such as command line: vite build --mode production
-  else if (mode === "production") {
-    // do something
-  }
-  */
-
   if (mode === "lib") {
     return {
       base: "./",
