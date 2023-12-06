@@ -9,7 +9,7 @@ import type { PopoverProps } from "./type";
  */
 function Popver(props: PopoverProps) {
   const popRef = useRef<any>(null);
-  const [popInst, setPopInst] = useState<unknown>(null);
+  const [popInst, setPopInst] = useState<any>(null);
 
   // Child Node
   const child = Children.only(props.children) as ReactElement;
