@@ -2,7 +2,7 @@
 
 React wrapper for next-popover library
 
-[![Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/next-popover-vywrrk)
+[![Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/devbox/next-popover-react-h8cfcy)
 
 ## Install
 

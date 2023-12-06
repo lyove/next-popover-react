@@ -65,9 +65,6 @@ export default defineConfig(({ command, mode }) => {
         react({}),
         banner(pkgInfo),
         styleInject(),
-        // dts({
-        //   insertTypesEntry: true,
-        // }),
       ],
       resolve: {
         alias: {
