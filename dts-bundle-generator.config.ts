@@ -2,7 +2,8 @@
 const packageJson = require("./package.json");
 
 const getPackageName = () => {
-  return packageJson.name;
+  // return packageJson.name;
+  return "popover";
 };
 
 const config = {
